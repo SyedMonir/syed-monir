@@ -5,7 +5,7 @@ import { BsGithub } from 'react-icons/bs';
 const Projects = () => {
   return (
     <>
-      <section className="text-white body-font bg-slate-900">
+      <section className="text-white body-font bg-slate-900" id="projects">
         <h2 className="text-center uppercase text-3xl pt-8">
           Checkout My Recent Project
         </h2>
@@ -30,8 +30,7 @@ const Projects = () => {
                     User & Admin Dashboard, Part can be add or delete by Admin,
                     Admin can manage parts and orders also Only Admin can make
                     admin, Only User Can purchase part and they can add review,
-                    User and Admin can update their profile, and Fully
-                    Responsive and Optimized
+                    User and Admin can update their profile.
                   </p>
                   <div className="flex items-center justify-between flex-wrap ">
                     <a
