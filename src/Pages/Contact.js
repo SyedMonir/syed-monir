@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import Swal from 'sweetalert2';
 
 const Contact = () => {
   const form = useRef();
@@ -7,21 +8,41 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        'service_a885eem',
-        'template_qqr2tdl',
-        form.current,
-        'n4gv28nuNBMHxLq5P'
-      )
-      .then(
-        (result) => {
-          console.log(result);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+    Swal.fire({
+      title: 'Are you sure?',
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'Yes, Send it!',
+    }).then((result) => {
+      if (result.isConfirmed) {
+        emailjs
+          .sendForm(
+            'service_a885eem',
+            'template_qqr2tdl',
+            form.current,
+            'n4gv28nuNBMHxLq5P'
+          )
+          .then(
+            (result) => {
+              //   console.log(result);
+              if (result.status === 200) {
+                Swal.fire({
+                  title: 'Success!',
+                  text: 'Your message has been sent.',
+                  icon: 'success',
+                  confirmButtonText: 'OK',
+                });
+                e.target.reset();
+              }
+            },
+            (error) => {
+              console.log(error.text);
+            }
+          );
+      }
+    });
   };
   return (
     <>
@@ -66,6 +87,22 @@ const Contact = () => {
                       type="email"
                       id="email"
                       name="email"
+                      className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                    />
+                  </div>
+                </div>
+                <div className="p-2 w-full">
+                  <div className="relative">
+                    <label
+                      htmlFor="subject"
+                      className="leading-7 text-sm text-gray-300"
+                    >
+                      Subject
+                    </label>
+                    <input
+                      type="text"
+                      id="subject"
+                      name="subject"
                       className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                     />
                   </div>
