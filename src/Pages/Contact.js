@@ -46,10 +46,13 @@ const Contact = () => {
   };
   return (
     <>
-      <section className="text-white bg-slate-800 body-font relative">
-        <div className="container px-5 py-24 mx-auto">
+      <section
+        id="contact"
+        className="text-white bg-slate-800 body-font relative"
+      >
+        <div className="container px-5 py-20 mx-auto">
           <div className="flex flex-col text-center w-full mb-12">
-            <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 ">
+            <h1 className="text-center uppercase pt-8 text-3xl font-medium title-font mb-4 ">
               Contact With Me
             </h1>
             <p className="lg:w-2/3 mx-auto leading-relaxed text-base">

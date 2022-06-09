@@ -5,7 +5,7 @@ const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
   return (
     <>
-      <nav className="relative flex flex-wrap items-center justify-between px-2 py-3 bg-slate-800 ">
+      <nav className="w-full fixed top-0 z-50 flex flex-wrap items-center justify-between px-2 py-3 bg-slate-800 ">
         <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
             <a
@@ -44,6 +44,14 @@ const Navbar = () => {
                   href="#projects"
                 >
                   <span className="ml-2">Projects</span>
+                </a>
+              </li>
+              <li className="nav-item">
+                <a
+                  className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
+                  href="#contact"
+                >
+                  <span className="ml-2">Contact</span>
                 </a>
               </li>
               <li className="nav-item">
