@@ -1,9 +1,10 @@
 import React from 'react';
+import Projects from './Projects';
 
 const Home = () => {
   return (
     <main>
-      <h1>Main</h1>
+      <Projects />
     </main>
   );
 };
