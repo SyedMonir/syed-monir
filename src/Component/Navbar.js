@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { AiOutlineMenuFold } from 'react-icons/ai';
 
 const Navbar = () => {
@@ -8,12 +9,12 @@ const Navbar = () => {
       <nav className="w-full sticky top-0 z-50 flex flex-wrap items-center justify-center px-2 py-3 bg-slate-800 shadow gap-16 h-16 text-white text-lg font-medium">
         <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
           <div className="w-full relative items-center flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
-            <a
+            <Link
               className=" font-bold leading-loose tracking-widest inline-block mr-4 whitespace-nowrap uppercase text-white"
-              href="#!"
+              to="/"
             >
               Syed Monir <span className="text-green-600 text-3xl">.</span>
-            </a>
+            </Link>
             <button
               className="text-white cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
               type="button"
