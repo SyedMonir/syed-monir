@@ -32,7 +32,15 @@ const Navbar = () => {
             <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
               <li className="nav-item">
                 <a
-                  className="sm:px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
+                  className="sm:px-3 py-2 flex items-center text-base tracking-widest uppercase font-bold leading-snug text-white hover:opacity-75"
+                  href="#about"
+                >
+                  <span className="ml-2">About Me</span>
+                </a>
+              </li>
+              <li className="nav-item">
+                <a
+                  className="sm:px-3 py-2 flex items-center text-base tracking-widest uppercase font-bold leading-snug text-white hover:opacity-75"
                   href="#projects"
                 >
                   <span className="ml-2">Projects</span>
@@ -40,7 +48,7 @@ const Navbar = () => {
               </li>
               <li className="nav-item">
                 <a
-                  className="sm:px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
+                  className="sm:px-3 py-2 flex items-center text-base tracking-widest uppercase font-bold leading-snug text-white hover:opacity-75"
                   href="#contact"
                 >
                   <span className="ml-2">Contact</span>
@@ -48,7 +56,7 @@ const Navbar = () => {
               </li>
               <li className="nav-item border ml-2">
                 <a
-                  className="sm:px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:bg-white hover:opacity-75 hover:text-black"
+                  className="sm:px-3 py-2 flex items-center text-base tracking-widest uppercase font-bold leading-snug text-white hover:bg-white hover:opacity-75 hover:text-black"
                   href="https://drive.google.com/file/d/1oV4WaM6JNdGQzuJ7K9CAAPHdR4WAiXtp/view"
                   target="_blank"
                   rel="noopener noreferrer"

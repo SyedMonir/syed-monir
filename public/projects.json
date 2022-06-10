@@ -1,0 +1,32 @@
+[
+  {
+    "_id": 1,
+    "image": "https://i.ibb.co/g7PbZw1/Screenshot-624.png",
+    "category": "Parts Manufacturer",
+    "title": "Lamps Manufacturer.",
+    "description": "User & Admin Dashboard, Part can be add or delete by Admin, Admin can manage parts and orders also Only Admin can make admin, Only User Can purchase part and they can add review, User and Admin can update their profile.",
+    "liveSite": "https://lamps-manufacturer.web.app/",
+    "clientCode": "https://github.com/SyedMonir/lamps-manufacturer-client",
+    "serverCode": "https://github.com/SyedMonir/lamps-manufacturer-server"
+  },
+  {
+    "_id": 2,
+    "image": "https://i.ibb.co/4KYRMPH/choco-ss.png",
+    "category": "Inventory",
+    "title": "Choco Cycle Dealer",
+    "description": " Fully responsive website and protected routes with email & password authentication and with google also. There is a user dashboard where users can add products and manage their inventory also. Product owners can update their product shipment.",
+    "liveSite": "https://choco-cycle-dealer.web.app/",
+    "clientCode": "https://github.com/SyedMonir/choco-cycle-dealer-client",
+    "serverCode": "https://github.com/SyedMonir/choco-cycle-dealer-server"
+  },
+  {
+    "_id": 3,
+    "image": "https://i.ibb.co/H73v2sH/game-ss.png",
+    "category": "Service providers",
+    "title": "theSyed",
+    "description": "Users can sign up and log in to this website using google or email & password. Anyone cannot go to some pages without login, which is developed by React Router. Fully responsive website and protected routes with authentication.",
+    "liveSite": "https://thesyed-wildlife-photographer.web.app/",
+    "clientCode": "https://github.com/SyedMonir/independent-service-provider",
+    "serverCode": null
+  }
+]
