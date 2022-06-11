@@ -52,7 +52,7 @@ const Project = () => {
             </div>
           </div>
 
-          <div className="w-[30%]">
+          <div className="sm:w-[30%] w-full sm:mx-0 mx-4">
             <div className="">
               <div className="card bg-slate-800 p-4">
                 <h4 className="uppercase font-bold text-center mb-5 pt-4">
@@ -125,34 +125,6 @@ const Project = () => {
           </div>
         </div>
       </section>
-      {/* <div className="flex items-center justify-between flex-wrap ">
-        <a
-          href="https://lamps-manufacturer.web.app/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0"
-        >
-          View Project <AiOutlineArrowRight className="ml-2" />
-        </a>
-        <span>
-          <a
-            href="https://github.com/SyedMonir/lamps-manufacturer-client"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0"
-          >
-            Client <BsGithub className="mx-2" />
-          </a>
-          <a
-            href="https://github.com/SyedMonir/lamps-manufacturer-server"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0"
-          >
-            Server <BsGithub className="ml-2" />
-          </a>
-        </span>
-      </div> */}
     </>
   );
 };

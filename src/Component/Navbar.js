@@ -30,7 +30,7 @@ const Navbar = () => {
             }
             id="example-navbar-danger"
           >
-            <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
+            <ul className="flex flex-col lg:flex-row list-none lg:ml-auto bg-slate-800 sm:p-0 p-4">
               <li className="nav-item">
                 <a
                   className="sm:px-3 py-2 flex items-center text-base tracking-widest uppercase font-bold leading-snug text-white hover:opacity-75"
@@ -65,7 +65,7 @@ const Navbar = () => {
               </li>
               <li className="nav-item border ml-2">
                 <a
-                  className="sm:px-3 py-2 flex items-center text-base tracking-widest uppercase font-bold leading-snug text-white hover:bg-white hover:opacity-75 hover:text-black"
+                  className="sm:px-3 px-3 py-2 flex items-center text-base tracking-widest uppercase font-bold leading-snug text-white hover:bg-white hover:opacity-75 hover:text-black"
                   href="https://drive.google.com/file/d/1oV4WaM6JNdGQzuJ7K9CAAPHdR4WAiXtp/view"
                   target="_blank"
                   rel="noopener noreferrer"
